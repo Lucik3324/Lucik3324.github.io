@@ -256,7 +256,7 @@ nav{
     width: 850px;
     height: 175px;
     padding-bottom: 30px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .keys_info_project_title{
@@ -539,7 +539,7 @@ input[type="number"]:focus {
 .message_forms textarea{
     text-align: left;
     display: block;
-    width: 730px;
+    width: 735px;
     height: 95px;
     margin-top: 10px;
     resize: none;
@@ -551,7 +551,7 @@ input[type="number"]:focus {
 }
 
 .submit{
-    margin-top: 7px;
+    margin-top: 30px;
     text-align: center;
     width: 125px;
     height: 45px;
@@ -569,8 +569,8 @@ input[type="number"]:focus {
 
 .contacts_footer_logo li{
     float: left;
-    padding-top: 74px;
-    margin-right: 56px;
+    padding-top: 52.5px;
+    margin-right: 54.95px;
 }
 
 .map{
