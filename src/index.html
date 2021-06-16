@@ -3,6 +3,8 @@
 <head> 
     <meta charset="UTF-8">
     <title>MyFirstProject</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header>
@@ -23,7 +25,9 @@
    <div class="main">
        <div class="title_container">
            <h1>Привет <br> Я Андрей Браун</h1>
-           <h4>Фулл стек веб-разработчик</h4>
+           <div class="title_container_subtitle">
+               <p>Фулл стек веб-разработчик</p>
+           </div>
            <input type="submit" value="Обо мне">
            <input type="submit" value="Мои работы">
        </div>
@@ -34,7 +38,7 @@
            <hr>
        </div>
        <div class="about_img">
-           <img src="img/about_img.jpg" alt="">
+           <img class="about_title_img" src="img/about_img.jpg" alt="">
        </div>
        <div class="abot_text">
            <p class="about_text_1">
@@ -59,7 +63,7 @@
        <div class="skill_menu">
            <div class="skill_menu_1">
                <div class="skill_menu_logo">
-                   <img src="img/laptop.jpg" alt="">
+                   <img src="img/laptop.png" alt="">
                </div>
                <div class="skill_menu_title">
                    Веб-дизайн
@@ -70,7 +74,7 @@
            </div>
             <div class="skill_menu_2">
                <div class="skill_menu_logo">
-                   <img src="img/sign.jpg" alt="">
+                   <img src="img/sign.png" alt="">
                </div>
                <div class="skill_menu_title">
                    Разработка
@@ -81,7 +85,7 @@
            </div>
             <div class="skill_menu_3">
                <div class="skill_menu_logo">
-                   <img src="img/rocket.jpg" alt="">
+                   <img src="img/rocket.png" alt="">
                </div>
                <div class="skill_menu_title">
                    СЕО-Оптимизация
@@ -92,7 +96,7 @@
            </div>
             <div class="skill_menu_4">
                <div class="skill_menu_logo">
-                   <img src="img/gramophone.jpg" alt="">
+                   <img src="img/gramophone.png" alt="">
                </div>
                <div class="skill_menu_title">
                    Маркетинг
@@ -104,13 +108,15 @@
        </div>
    </div>
    <div class="keys">
-       <div class="keys_title">КЕЙСЫ</div>
+      <div class="keys_main">
+        <div class="keys_title">КЕЙСЫ</div>
         <div class="linel">
            <hr>
        </div>
        <div class="keys_title_text">
            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.
        </div>
+      </div>
        <div class="keys_slider">
            
        </div>
@@ -172,13 +178,13 @@
            <div class="price_time">
                <div class="price_time_title">Сроки</div>
                <div class="price_time_calculator">
-                   <input type="number">
+                   <input type="number" value="0">
                </div>
            </div>
            <div class="price_cost">
                <div class="price_cost_title">Стоимость</div>
                <div class="price_cost_calculator">
-                   <input type="number">
+                   <input type="number" value="0">
                </div>
            </div>
        </div>
@@ -191,7 +197,7 @@
        <div class="statistics_menu">
            <div class="statistics_menu_1">
                <div class="statistics_menu_logo">
-                   <img src="img/smile.jpg" alt="">
+                   <img src="img/smile.png" alt="">
                </div>
                <div class="statistics_menu_title">
                    120
@@ -202,7 +208,7 @@
            </div>
             <div class="statistics_menu_2">
                <div class="statistics_menu_logo">
-                   <img src="img/brackets.jpg" alt="">
+                   <img src="img/brackets.png" alt="">
                </div>
                <div class="statistics_menu_title">
                    4,600
@@ -213,7 +219,7 @@
            </div>
             <div class="statistics_menu_3">
                <div class="statistics_menu_logo">
-                   <img src="img/checkmark.jpg" alt="">
+                   <img src="img/checkmark.png" alt="">
                </div>
                <div class="statistics_menu_title">
                    340
@@ -224,7 +230,7 @@
            </div>
             <div class="statistics_menu_4">
                <div class="statistics_menu_logo">
-                   <img src="img/cup.jpg" alt="">
+                   <img src="img/cup.png" alt="">
                </div>
                <div class="statistics_menu_title">
                    23
@@ -245,10 +251,10 @@
        </div>
        <div class="reviews_text">
            <p class="reviews_text_1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante <br> facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
            </p>
            <p class="reviews_text_2">
-                Михаил, Ген директор ПАО “Газпром”.
+                <b>Михаил,</b> Ген директор ПАО “Газпром”.
            </p>
        </div>
        <div class="reviews_input">
@@ -268,7 +274,7 @@
     <div class="contacts_menu">
         <div class="contacts_menu_1">
             <div class="contacts_menu_logo">
-                <img src="img/geo.jpg" alt="">
+                <img src="img/geo.png" alt="">
             </div>
             <div class="contacts_menu_text">
                 Санкт-Петербург<br>
@@ -277,7 +283,7 @@
         </div>
             <div class="contacts_menu_2">
             <div class="contacts_menu_logo">
-                <img src="img/envelope.jpg" alt="">
+                <img src="img/envelope.png" alt="">
             </div>
             <div class="contacts_menu_text">
                 info@companyname.com
@@ -285,7 +291,7 @@
         </div>
             <div class="contacts_menu_3">
             <div class="contacts_menu_logo">
-                <img src="img/tube.jpg" alt="">
+                <img src="img/tube.png" alt="">
             </div>
             <div class="contacts_menu_text">
                 +7 999 999-99-99
@@ -296,21 +302,21 @@
         <div class="message_title">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
         <div class="message_forms">
             <form action="#">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Email">
-                <textarea name="message_forms_1" id="1" cols="30" rows="10"></textarea>
-                <input type="submit" value="Отправить">
+                <input class="authorization_1" type="text" placeholder="Имя">
+                <input class="authorization_2" type="text" placeholder="Email">
+                <textarea name="message_forms_1" id="1" placeholder="Сообщение" cols="30" rows="10"></textarea>
+                <input class="submit" type="submit" value="Отправить">
             </form>
         </div>
     </div>
     <div class="contacts_footer_logo">
         <ul>
-            <li><img src="img/fb.jpg" alt=""></li>
-            <li><img src="img/twitter.jpg" alt=""></li>
-            <li><img src="img/ball.jpg" alt=""></li>
-            <li><img src="img/kitty.jpg" alt=""></li>
-            <li><img src="img/inst.jpg" alt=""></li>
-            <li><img src="img/in.jpg" alt=""></li>
+            <li><img src="img/fb.png" alt=""></li>
+            <li><img src="img/twitter.png" alt=""></li>
+            <li><img src="img/ball.png" alt=""></li>
+            <li><img src="img/kitty.png" alt=""></li>
+            <li><img src="img/inst.png" alt=""></li>
+            <li><img src="img/in.png" alt=""></li>
         </ul>
     </div>
    </div>
