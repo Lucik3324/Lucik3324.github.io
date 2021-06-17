@@ -159,9 +159,10 @@ nav{
 
 .skill_menu_1, .skill_menu_2, .skill_menu_3, .skill_menu_4{
     display: inline-block;
-    width: 230px;
+    width: 240px;
     height: 200px;
-    margin-right: 85px;
+    margin: 0 42px;
+    vertical-align: middle;
 }
 
 .skill_menu_title{
@@ -384,7 +385,8 @@ input[type="number"]:focus {
     display: inline-block;
     width: 230px;
     height: 200px;
-    margin-right: 85px;
+    margin: 0 72px;
+    vertical-align: middle;
 }
 
 .statistics_menu_title{
