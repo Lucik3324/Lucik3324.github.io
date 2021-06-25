@@ -8,6 +8,19 @@
 </head>
 <body>
    <header>
+      <div id="myPreloader" class="wrap-myLoader">
+  <div class="myLoader"></div>
+</div>
+      <script>
+          document.body.onload = function() {
+    setTimeout(function() {
+        var preloader = document.getElementById('myPreloader');
+        if (!preloader.classList.contains('cansel')) {
+            preloader.classList.add('cansel');
+        }
+    }, 450)
+};
+       </script>
        <nav>
            <div class="logo">Андрей Браун</div>
            <div class="menu">
@@ -22,7 +35,7 @@
            </div>
        </nav>
    </header>
-   <div class="main">
+   <main class="main">
        <div class="title_container">
            <h1>Привет <br> Я Андрей Браун</h1>
            <div class="title_container_subtitle">
@@ -31,8 +44,8 @@
            <input type="button" value="Обо мне">
            <input type="button" value="Мои работы">
        </div>
-   </div>
-   <div class="about">
+   </main>
+   <section class="about">
        <div class="about_title"><h3>ОБО МНЕ</h3></div>
        <div class="linel">
            <hr>
@@ -52,10 +65,10 @@
            <div class="about_input_logo">
                
            </div>
-           <input type="submit" value="Скачать резюме">
+           <input type="button" value="Скачать резюме">
        </div>
-   </div>
-   <div class="skills">
+   </section>
+   <section class="skills">
       <div class="skills_title"><h3>ЧТО Я УМЕЮ</h3></div>
         <div class="linel">
            <hr>
@@ -106,8 +119,8 @@
                </div>
            </div>
        </div>
-   </div>
-   <div class="keys">
+   </section>
+   <section class="keys">
       <div class="keys_main">
         <div class="keys_title">КЕЙСЫ</div>
         <div class="linel">
@@ -147,8 +160,8 @@
                </div>
            </div>
        </div>
-   </div>
-   <div class="price">
+   </section>
+   <section class="price">
        <div class="price_title">Расчет стоимости</div>
        <div class="price_menu">
            <div class="price_menu_title">ТИП САЙТА</div>
@@ -188,8 +201,8 @@
                </div>
            </div>
        </div>
-   </div>
-      <div class="statistics">
+   </section>
+      <section class="statistics">
       <div class="statistics_title"><h3>НЕМНОГО СТАТИСТИКИ</h3></div>
         <div class="linel">
            <hr>
@@ -240,8 +253,8 @@
                </div>
            </div>
        </div>
-   </div>
-      <div class="reviews">
+   </section>
+      <section class="reviews">
        <div class="reviews_title"><h3>ОТЗЫВЫ</h3></div>
        <div class="linel">
            <hr>
@@ -262,8 +275,8 @@
             <input type="radio" name="text_input" value="2">
             <input type="radio" name="text_input" value="3">
        </div>
-   </div>
-   <div class="contacts">
+   </section>
+   <section class="contacts">
    <div class="contacts_title">МОИ КОНТАКТЫ</div>
     <div class="linel">
            <hr>
@@ -319,10 +332,10 @@
             <li><img src="img/in.png" alt=""></li>
         </ul>
     </div>
-   </div>
-   <div class="map">
+   </section>
+   <section class="map">
        
-   </div>
+   </section>
    <footer class="footer">
        <div class="footer_text">
            Copyright © 2021 Андрей Браун. Design by Web
