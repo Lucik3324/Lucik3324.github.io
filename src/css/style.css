@@ -768,14 +768,13 @@ input[type="number"]:focus {
 }
 
 .contacts_footer_logo{
-    margin-left: 750px;
+    text-align: center;
+    padding-top: 54px;
 }
 
-.contacts_footer_logo li{
-    float: left;
-    padding-top: 54px;
-    margin: 0 27px 0 27px;
-    text-align: center;
+.contacts_footer_logo_1, .contacts_footer_logo_2, .contacts_footer_logo_3, .contacts_footer_logo_4, .contacts_footer_logo_5, .contacts_footer_logo_6{
+    display: inline-block;
+    margin: 0 27px;
 }
 
 .map{
