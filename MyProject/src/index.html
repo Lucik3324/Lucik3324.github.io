@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFirstProject</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="myPreloader" class="wrap-myLoader">
+            <div class="myLoader"></div>
+        </div>
+        <script>
+            document.body.onload = function() {
+                setTimeout(function() {
+                    var preloader = document.getElementById('myPreloader');
+                    if (!preloader.classList.contains('cansel')) {
+                        preloader.classList.add('cansel');
+                    }
+                }, 450)
+            };
+
+        </script>
+        <nav>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo">Андрей Браун</div>
+                    </div>
+                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Навигация
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 mt-5 pt-5">
+                    <div class="title_container mt-5">
+                        <h1>Привет <br> Я Андрей Браун</h1>
+                        <div class="title_container_subtitle">
+                            <p>Фулл стек веб-разработчик</p>
+                        </div>
+                        <input type="button" value="Обо мне">
+                        <input type="button" value="Мои работы">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="row text-items-center">
+                <div class="col-xxl-8 offset-xxl-2">
+                    <div class="about_title">
+                        <h3>ОБО МНЕ</h3>
+                    </div>
+                    <div class="linel">
+                        <hr>
+                    </div>
+                    <div class="about_img">
+                        <img class="about_title_img" src="img/about_img.jpg" alt="">
+                    </div>
+                    <div class="abot_text d-flex flex-column">
+                        <div class="d-flex about_text_1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                        </div>
+                        <div class="d-flex about_text_2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                        </div>
+                    </div>
+                    <div class="about_input">
+                        <div class="about_input_logo">
+
+                        </div>
+                        <input type="button" value="Скачать резюме">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="skills">
+        <div class="container">
+            <div class="row text-items-center">
+                <div class="col">
+                    <div class="skills_title">
+                        <h3>ЧТО Я УМЕЮ</h3>
+                    </div>
+                    <div class="linel">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                    <div class="skill_menu_1">
+                        <div class="skill_menu_logo">
+                            <img src="img/laptop.png" alt="">
+                        </div>
+                        <div class="skill_menu_title">
+                            Веб-дизайн
+                        </div>
+                        <div class="skill_menu_text">
+                            Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                    <div class="skill_menu_2">
+                        <div class="skill_menu_logo">
+                            <img src="img/sign.png" alt="">
+                        </div>
+                        <div class="skill_menu_title">
+                            Разработка
+                        </div>
+                        <div class="skill_menu_text">
+                            Lorem ipsum dolor sit amet placerat facilisis mi in tempus eleifend pellentesque.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                    <div class="skill_menu_3">
+                        <div class="skill_menu_logo">
+                            <img src="img/rocket.png" alt="">
+                        </div>
+                        <div class="skill_menu_title">
+                            СЕО-Оптимизация
+                        </div>
+                        <div class="skill_menu_text">
+                            Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                    <div class="skill_menu_4">
+                        <div class="skill_menu_logo">
+                            <img src="img/gramophone.png" alt="">
+                        </div>
+                        <div class="skill_menu_title">
+                            Маркетинг
+                        </div>
+                        <div class="skill_menu_text">
+                            Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque .
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-lg-none d-block">
+                        <div class="skill_menu_1">
+                            <div class="skill_menu_logo">
+                                <img src="img/laptop.png" alt="">
+                            </div>
+                            <div class="skill_menu_title">
+                                Веб-дизайн
+                            </div>
+                            <div class="skill_menu_text">
+                                Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-lg-none d-block">
+                        <div class="skill_menu_2">
+                            <div class="skill_menu_logo">
+                                <img src="img/sign.png" alt="">
+                            </div>
+                            <div class="skill_menu_title">
+                                Разработка
+                            </div>
+                            <div class="skill_menu_text">
+                                Lorem ipsum dolor sit amet placerat facilisis mi in tempus eleifend pellentesque.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-lg-none d-block">
+                        <div class="skill_menu_3">
+                            <div class="skill_menu_logo">
+                                <img src="img/rocket.png" alt="">
+                            </div>
+                            <div class="skill_menu_title">
+                                СЕО-Оптимизация
+                            </div>
+                            <div class="skill_menu_text">
+                                Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-lg-none d-block">
+                        <div class="skill_menu_4">
+                            <div class="skill_menu_logo">
+                                <img src="img/gramophone.png" alt="">
+                            </div>
+                            <div class="skill_menu_title">
+                                Маркетинг
+                            </div>
+                            <div class="skill_menu_text">
+                                Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque .
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="keys">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="px-0 col">
+                    <div class="keys_main">
+                        <div class="keys_title">КЕЙСЫ</div>
+                        <div class="linel">
+                            <hr>
+                        </div>
+                        <div class="keys_title_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="keys_slider">
+                <img src="img/keys_slider_bg.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-3 col-md-3 d-none d-md-block">
+                    <div class="keys_info_menu_1 d-inline-flex">
+                        <div class="keys_info_visit ">
+                            <div class="keys_info_visit_title">
+                                CLIENT:
+                            </div>
+                            <div class="keys_info_visit_text">
+                                Какая-то компания
+                            </div>
+                            <div class="keys_info_visit_title">
+                                WEBSITE:
+                            </div>
+                            <div class="keys_info_visit_text">
+                                http://www.somedomain.com
+                            </div>
+                            <div class="keys_info_visit_input">
+                                <input type="submit" value="Перейти на сайт">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-md-9 d-none d-md-block d-inline-flex d-inline-flex justify-content-end">
+                    <div class="keys_info_menu_2">
+                        <div class="keys_info_project">
+                            <div class="keys_info_project_title">
+                                Название проекта
+                            </div>
+                            <div class="keys_info_project_text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md d-md-none d-block">
+                    <div class="keys_info_project">
+                        <div class="keys_info_project_title">
+                            Название проекта
+                        </div>
+                        <div class="keys_info_project_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md d-md-none d-block">
+                    <div class="keys_info_visit ">
+                        <div class="keys_info_visit_title">
+                            CLIENT:
+                        </div>
+                        <div class="keys_info_visit_text">
+                            Какая-то компания
+                        </div>
+                        <div class="keys_info_visit_title">
+                            WEBSITE:
+                        </div>
+                        <div class="keys_info_visit_text">
+                            http://www.somedomain.com
+                        </div>
+                        <div class="keys_info_visit_input">
+                            <input type="submit" value="Перейти на сайт">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <section class="price">
+
+                    <div class="price_title">Расчет стоимости</div>
+                    <div class="price_menu">
+                        <div class="price_menu_title">ТИП САЙТА</div>
+                        <div class="price_menu_select">
+                            <select name="list_type" id="">
+                                <option selected disabled>Выберите пункт...</option>
+                                <option value="opt1">Значение 1</option>
+                            </select>
+                        </div>
+                        <div class="price_menu_title">ДИЗАЙН</div>
+                        <div class="price_menu_select">
+                            <select name="list_design" id="">
+                                <option selected disabled>Выберите пункт...</option>
+                                <option value="opt1">Значение 1</option>
+                            </select>
+                        </div>
+                        <div class="price_menu_title">АДАПТИВНОСТЬ</div>
+                        <div class="price_menu_select">
+                            <select name="list_adaptability" id="">
+                                <option selected disabled>Выберите пункт...</option>
+                                <option value="opt1">Значение 1</option>
+                            </select>
+                        </div>
+                        <div class="price_line">
+                            <hr>
+                        </div>
+                        <div class="price_time">
+                            <div class="price_time_title">Сроки</div>
+                            <div class="price_time_calculator">
+                                <input type="number" value="0">
+                            </div>
+                        </div>
+                        <div class="price_cost">
+                            <div class="price_cost_title">Стоимость</div>
+                            <div class="price_cost_calculator">
+                                <input type="number" value="0">
+                            </div>
+                        </div>
+                        <div class="price_menu_input">
+                            <input type="submit" value="Оставить заявку">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <section class="statistics">
+
+        <div class="container">
+            <div class="row text-items-center">
+                <div class="col">
+                    <div class="statistics_title">
+                        <h3>НЕМНОГО СТАТИСТИКИ</h3>
+                    </div>
+                    <div class="linel">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                    <div class="statistics_menu_1">
+                        <div class="statistics_menu_logo">
+                            <img src="img/smile.png" alt="">
+                        </div>
+                        <div class="statistics_menu_title">
+                            120
+                        </div>
+                        <div class="statistics_menu_text">
+                            СЧАСТЛИВЫХ КЛИЕНТОВ
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                    <div class="statistics_menu_2">
+                        <div class="statistics_menu_logo">
+                            <img src="img/brackets.png" alt="">
+                        </div>
+                        <div class="statistics_menu_title">
+                            4,600
+                        </div>
+                        <div class="statistics_menu_text">
+                            ЧАСОВ РАБОТЫ
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                    <div class="statistics_menu_3">
+                        <div class="statistics_menu_logo">
+                            <img src="img/checkmark.png" alt="">
+                        </div>
+                        <div class="statistics_menu_title">
+                            340
+                        </div>
+                        <div class="statistics_menu_text">
+                            ПРОЕКТОВ ЗАВЕРШЕНО
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                    <div class="statistics_menu_4">
+                        <div class="statistics_menu_logo">
+                            <img src="img/cup.png" alt="">
+                        </div>
+                        <div class="statistics_menu_title">
+                            23
+                        </div>
+                        <div class="statistics_menu_text">
+                            НАГРАД ПОЛУЧЕНО
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-lg-none d-block">
+                        <div class="statistics_menu_1">
+                            <div class="statistics_menu_logo">
+                                <img src="img/smile.png" alt="">
+                            </div>
+                            <div class="statistics_menu_title">
+                                120
+                            </div>
+                            <div class="statistics_menu_text">
+                                СЧАСТЛИВЫХ КЛИЕНТОВ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-lg-none d-block">
+                        <div class="statistics_menu_2">
+                            <div class="statistics_menu_logo">
+                                <img src="img/brackets.png" alt="">
+                            </div>
+                            <div class="statistics_menu_title">
+                                4,600
+                            </div>
+                            <div class="statistics_menu_text">
+                                ЧАСОВ РАБОТЫ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-lg-none d-block">
+                        <div class="statistics_menu_3">
+                            <div class="statistics_menu_logo">
+                                <img src="img/checkmark.png" alt="">
+                            </div>
+                            <div class="statistics_menu_title">
+                                340
+                            </div>
+                            <div class="statistics_menu_text">
+                                ПРОЕКТОВ ЗАВЕРШЕНО
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-lg-none d-block">
+                        <div class="statistics_menu_4">
+                            <div class="statistics_menu_logo">
+                                <img src="img/cup.png" alt="">
+                            </div>
+                            <div class="statistics_menu_title">
+                                23
+                            </div>
+                            <div class="statistics_menu_text">
+                                НАГРАД ПОЛУЧЕНО
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="reviews_title">
+                        <h3>ОТЗЫВЫ</h3>
+                    </div>
+                    <div class="linel">
+                        <hr>
+                    </div>
+                    <div class="reviews_img">
+                        <img src="img/reviews_logo.jpg" alt="">
+                    </div>
+                    <div class="reviews_text">
+                        <p class="reviews_text_1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante <br> facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
+                        </p>
+                        <p class="reviews_text_2">
+                            <b>Михаил,</b> Ген директор ПАО “Газпром”.
+                        </p>
+                    </div>
+                    <div class="reviews_input">
+                        <input type="radio" name="text_input" value="1">
+                        <input type="radio" name="text_input" value="2">
+                        <input type="radio" name="text_input" value="3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="contacts_title">МОИ КОНТАКТЫ</div>
+                    <div class="linel">
+                        <hr>
+                    </div>
+                    <div class="contacts_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4  d-none d-sm-block">
+                    <div class="contacts_menu_1">
+                        <div class="contacts_menu_1_1">
+                            <div class="contacts_menu_logo">
+                                <img src="img/geo.png" alt="">
+                            </div>
+                            <div class="contacts_menu_text">
+                                Санкт-Петербург<br>
+                                Невский проспект 11
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4  d-none d-sm-block">
+                    <div class="contacts_menu_2">
+                        <div class="contacts_menu_logo">
+                            <img src="img/envelope.png" alt="">
+                        </div>
+                        <div class="contacts_menu_text">
+                            info@companyname.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4  d-none d-sm-block">
+                    <div class="contacts_menu_3">
+                        <div class="contacts_menu_3_3">
+                            <div class="contacts_menu_logo">
+                                <img src="img/tube.png" alt="">
+                            </div>
+                            <div class="contacts_menu_text">
+                                +7 999 999-99-99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-sm-none d-block">
+                    <div class="contacts_menu_1">
+                        <div class="contacts_menu_logo">
+                            <img src="img/geo.png" alt="">
+                        </div>
+                        <div class="contacts_menu_text">
+                            Санкт-Петербург<br>
+                            Невский проспект 11
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-sm-none d-block">
+                    <div class="contacts_menu_2">
+                        <div class="contacts_menu_logo">
+                            <img src="img/envelope.png" alt="">
+                        </div>
+                        <div class="contacts_menu_text">
+                            info@companyname.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-sm-none d-block">
+                    <div class="contacts_menu_3">
+                        <div class="contacts_menu_logo">
+                            <img src="img/tube.png" alt="">
+                        </div>
+                        <div class="contacts_menu_text">
+                            +7 999 999-99-99
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="message_title">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
+                </div>
+                <div class="col-8 offset-xxl-2 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2  d-none d-sm-block">
+                    <div class="massage_forms_1">
+                        <form action="#">
+                            <input class="authorization_1" type="text" placeholder="Имя">
+                            <input class="authorization_2" type="text" placeholder="Email">
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-12 d-sm-none d-block">
+                    <div class="massage_forms_1">
+                        <form action="#">
+                            <input class="authorization_1" type="text" placeholder="Имя">
+                            <input class="authorization_2" type="text" placeholder="Email">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="massage_forms_2">
+                        <form action="#">
+                            <textarea class="textarea_form_2" name="message_forms_textarea" id="1" placeholder="Сообщение" cols="30" rows="10"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="massage_forms_3">
+                        <form action="#">
+                            <input class="submit" type="submit" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col logo_footer_menu">
+                    <div class="contacts_footer_logo d-flex">
+                        <div class="contacts_footer_logo_1">
+                            <img src="img/fb.png" alt="">
+                        </div>
+                        <div class="contacts_footer_logo_2">
+                            <img src="img/twitter.png" alt="">
+                        </div>
+                        <div class="contacts_footer_logo_3">
+                            <img src="img/ball.png" alt="">
+                        </div>
+                        <div class="contacts_footer_logo_4">
+                            <img src="img/kitty.png" alt="">
+                        </div>
+                        <div class="contacts_footer_logo_5">
+                            <img src="img/inst.png" alt="">
+                        </div>
+                        <div class="contacts_footer_logo_6">
+                            <img src="img/in.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="map">
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer_text">
+                        Copyright © 2021 Андрей Браун. Design by Web
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myScript.js"></script>
+</body>
+
+</html>
