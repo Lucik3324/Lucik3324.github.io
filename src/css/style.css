@@ -99,11 +99,20 @@ nav {
     z-index: 4;
 }
 
-.element-animation{
+.element-animation {
     opacity: 0;
 }
 
-.element-animation.show-animation{
+.element-animation.show-animation {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.element_animation {
+    opacity: 0;
+}
+
+.element_animation.not_element_animation {
     opacity: 1;
     transition: opacity 1s;
 }
@@ -277,10 +286,33 @@ nav {
     margin-top: 40px;
 }
 
+.modal-title{
+    margin: 0 auto;
+}
+.modal-body{
+    margin: 0 auto;
+}
+
+
+
+
+.modal-footer{
+    margin: 0 auto;
+}
+
+.modal-footer a {
+    color: #fff;
+}
+
+.modal-footer a:hover {
+    color: #fff;
+}
+
 .title_container_subtitle p {
     color: #79818c;
     font-size: 20px;
 }
+
 
 .about {
     width: 100%;
@@ -528,7 +560,7 @@ nav {
 .price_menu_title {
     padding-top: 55px;
     padding-left: 20px;
-    font-size: 30p    x;
+    font-size: 30p x;
     color: 1c2534;
     font-weight: 600;
     text-align: left;
