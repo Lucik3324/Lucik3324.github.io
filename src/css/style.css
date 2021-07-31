@@ -124,11 +124,15 @@ nav {
     font-size: 25px;
     line-height: 60px;
     float: left;
+/*
     -webkit-animation: comming ease 2s;
     -o-animation: comming ease 2s;
     animation: comming ease 2s;
+*/
+        --animate-duration: 2s;
 }
 
+/*
 @keyframes comming {
     from {
         opacity: 0;
@@ -138,23 +142,30 @@ nav {
         opacity: 1;
     }
 }
+*/
 
 .menu {
     float: left;
+    color: #fff;
 }
 
 .menu li {
+    color: #fff;
     float: left;
     line-height: 60px;
     margin-right: 40px;
     font-size: 14px;
     text-transform: uppercase;
+    --animate-duration: 0.4s;
+/*
     opacity: 0;
     -webkit-animation: topshift 0.4s ease forwards;
     -o-animation: topshift 0.4s ease forwards;
     animation: topshift 0.4s ease forwards;
+*/
 }
 
+/*
 @keyframes topshift {
     from {
         opacity: 0;
@@ -166,6 +177,7 @@ nav {
         margin-top: 0px;
     }
 }
+*/
 
 .menu li:nth-child(2) {
     animation-delay: 0.4s;
@@ -233,15 +245,18 @@ nav {
     color: #2c384a;
     text-align: center;
     width: 100%;
+/*
     opacity: 0;
     -webkit-animation: titlemove 1s ease forwards;
     -o-animation: titlemove 1s ease forwards;
     animation: titlemove 1s ease forwards;
     -webkit-animation-delay: 2.4s;
     -o-animation-delay: 2.4s;
-    animation-delay: 2.4s;
+*/
+    animation-delay: 2s;
 }
 
+/*
 @keyframes titlemove {
     from {
         opacity: 0;
@@ -253,6 +268,7 @@ nav {
         margin-left: 0px;
     }
 }
+*/
 
 .title_container h1 {
     font-size: 72px;
@@ -300,8 +316,9 @@ nav {
     margin: 0 auto;
 }
 
-.modal-footer a {
+.modal-footer button a {
     color: #fff;
+    z-index: 3;
 }
 
 .modal-footer a:hover {
@@ -344,10 +361,15 @@ nav {
     padding-top: 50px;
 }
 
+
 .about_title_img {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
+}
+
+.animate__animated.animate__fadeIn{
+    --animate-delay: 1s;
 }
 
 .about_title_img:hover {
@@ -642,6 +664,19 @@ nav {
     margin: 0 auto;
 }
 
+/*
+.price_menu_input.input{
+        font-size: 20px;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    background-color: #63b5ae;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}
+*/
+
 .price_menu_input input {
     font-size: 20px;
     width: 200px;
@@ -815,6 +850,7 @@ input[type="number"]:focus {
     width: 180px;
     height: 90px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .contacts_menu_1 {
@@ -846,12 +882,15 @@ input[type="number"]:focus {
     font-size: 15px;
 }
 
+.contacts_menu_text a{
+    color: #fff;
+}
+
 .contacts_message {
     padding-top: 40px;
 }
 
 .message_title {
-    padding-top: 50px;
     text-align: center;
     font-size: 20px;
     color: #fff;
@@ -1145,7 +1184,7 @@ input[type="number"]:focus {
     }
 
     .contacts {
-        height: 1040px;
+        height: 1080px;
     }
 
     .massage_forms_1 {
@@ -1156,6 +1195,9 @@ input[type="number"]:focus {
 
     .contacts_footer_logo {
         padding-top: 30px;
+    }
+    .logo_footer_menu{
+        display: none;
     }
 }
 
@@ -1193,7 +1235,7 @@ input[type="number"]:focus {
     }
 
     .contacts {
-        height: 1080px;
+        height: 1120px;
     }
 
 }
@@ -1296,7 +1338,7 @@ input[type="number"]:focus {
     }
 
     .contacts {
-        height: 980x;
+        height: 1140px;
     }
 
     .authorization_1,
@@ -1333,7 +1375,7 @@ input[type="number"]:focus {
     }
 
     .contacts {
-        height: 1080px;
+        height: 1160px;
     }
 
 }

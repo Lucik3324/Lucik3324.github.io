@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyFirstProject</title>
+    
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(83496169, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/83496169" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -33,17 +51,17 @@
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-xxl-2 col-lg-3 col-7">
-                        <div class="logo element_animation">Андрей Браун</div>
+                        <div class="logo wow  animate__animated animate__fadeIn">Андрей Браун</div>
                     </div>
                     <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
-                        <div class="menu element_animation">
+                        <div class="menu">
                             <ul>
-                                <li><a href="#about">Обо мне</a></li>
-                                <li><a href="#skills">Услуги</a></li>
-                                <li><a href="#keys">Кейсы</a></li>
-                                <li><a href="#price">Прайс</a></li>
-                                <li><a href="#reviews">Отзывы</a></li>
-                                <li><a href="#contacts">Контакты</a></li>
+                                <li class="wow animate__animated animate__animate__animated animate__fadeInDownBig"><a href="#about">Обо мне</a></li>
+                                <li class="wow animate__animated animate__animate__animated animate__fadeInDownBig"><a href="#skills">Услуги</a></li>
+                                <li class="wow animate__animated animate__animate__animated animate__fadeInDownBig"><a href="#keys">Кейсы</a></li>
+                                <li class="wow animate__animated animate__animate__animated animate__fadeInDownBig"><a href="#price" onclick="ym(83496169,'reachGoal','pricec'); return true;">Прайс</a></li>
+                                <li class="wow animate__animated animate__animate__animated animate__fadeInDownBig"><a href="#reviews">Отзывы</a></li>
+                                <li class="wow animate__animated animate__animate__animated animate__fadeInDownBig"><a href="#contacts">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -70,7 +88,7 @@
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="col-lg-6 mt-5 pt-5">
-                    <div class="title_container mt-5">
+                    <div class="title_container mt-5 wow animate__animated animate__backInLeft">
                         <h1>Привет <br> Я Андрей Браун</h1>
                         <div class="title_container_subtitle">
                             <p>Фулл стек веб-разработчик</p>
@@ -97,8 +115,8 @@
                         <div class="modal-body">
                             Если сделаете заказ сейчас, то получите скидку в 50%
                         </div>
-                        <div class="modal-footer"><a href="#price">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Оставить заявку</button></a>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="#price">Оставить заявку</a></button>
 
                         </div>
                     </div>
@@ -117,7 +135,7 @@
                     <div class="linel">
                         <hr>
                     </div>
-                    <div class="about_img element_animation">
+                    <div class="about_img wow animate__animated animate__fadeIn">
                         <img class="about_title_img" src="img/about_img.jpg" alt="">
                     </div>
                     <div class="abot_text d-flex flex-column">
@@ -155,7 +173,7 @@
             <div class="row">
                 <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
                     <div class="skill_menu_1">
-                        <div class="skill_menu_logo element_animation">
+                        <div class="skill_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/laptop.png" alt="">
                         </div>
                         <div class="skill_menu_title">
@@ -168,7 +186,7 @@
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
                     <div class="skill_menu_2">
-                        <div class="skill_menu_logo element_animation">
+                        <div class="skill_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/sign.png" alt="">
                         </div>
                         <div class="skill_menu_title">
@@ -181,7 +199,7 @@
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
                     <div class="skill_menu_3">
-                        <div class="skill_menu_logo element_animation">
+                        <div class="skill_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/rocket.png" alt="">
                         </div>
                         <div class="skill_menu_title">
@@ -194,7 +212,7 @@
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
                     <div class="skill_menu_4">
-                        <div class="skill_menu_logo element_animation">
+                        <div class="skill_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/gramophone.png" alt="">
                         </div>
                         <div class="skill_menu_title">
@@ -210,7 +228,7 @@
                 <div class="col">
                     <div class="d-lg-none d-block">
                         <div class="skill_menu_1">
-                            <div class="skill_menu_logo element_animation">
+                            <div class="skill_menu_logo wow animate__animated animate__fadeIn">
                                 <img src="img/laptop.png" alt="">
                             </div>
                             <div class="skill_menu_title">
@@ -225,7 +243,7 @@
                 <div class="col">
                     <div class="d-lg-none d-block">
                         <div class="skill_menu_2">
-                            <div class="skill_menu_logo element_animation">
+                            <div class="skill_menu_logo wow animate__animated animate__fadeIn">
                                 <img src="img/sign.png" alt="">
                             </div>
                             <div class="skill_menu_title">
@@ -242,7 +260,7 @@
                 <div class="col">
                     <div class="d-lg-none d-block">
                         <div class="skill_menu_3">
-                            <div class="skill_menu_logo element_animation">
+                            <div class="skill_menu_logo wow animate__animated animate__fadeIn">
                                 <img src="img/rocket.png" alt="">
                             </div>
                             <div class="skill_menu_title">
@@ -256,7 +274,7 @@
                 </div>
                 <div class="col">
                     <div class="d-lg-none d-block">
-                        <div class="skill_menu_4 element_animation">
+                        <div class="skill_menu_4 wow animate__animated animate__fadeIn">
                             <div class="skill_menu_logo">
                                 <img src="img/gramophone.png" alt="">
                             </div>
@@ -395,31 +413,31 @@
                 <section class="price">
 
                     <div class="price_title">Расчет стоимости</div>
-                    <form class="price_menu">
+                    <form action="php/mail_1.php" method="post" class="price_menu form_1">
                         <div class="price_menu_title">ТИП САЙТА</div>
                         <div class="price_menu_select">
                             <select class="list_type" name="list_type" id="list_type">
                                 <option selected disabled>Выберите пункт...</option>
-                                <option value="opt1">Сайт визитка</option>
-                                <option value="opt2">Landing Page</option>
-                                <option value="opt3">Сайт услуг</option>
-                                <option value="opt4">Интернет магазин</option>
+                                <option value="Сайт визитка">Сайт визитка</option>
+                                <option value="Landing Page">Landing Page</option>
+                                <option value="Сайт услуг">Сайт услуг</option>
+                                <option value="Интернет магазин">Интернет магазин</option>
                             </select>
                         </div>
                         <div class="price_menu_title">ДИЗАЙН</div>
                         <div class="price_menu_select">
-                            <select class="list_design" name="list_design" id="">
+                            <select class="list_design" name="list_design" id="#">
                                 <option selected disabled>Выберите пункт...</option>
-                                <option value="opt1">Шаблонный</option>
-                                <option value="opt2">Уникальный</option>
+                                <option value="Шаблонный">Шаблонный</option>
+                                <option value="Уникальный">Уникальный</option>
                             </select>
                         </div>
                         <div class="price_menu_title">АДАПТИВНОСТЬ</div>
                         <div class="price_menu_select">
-                            <select class="list_adaptability" name="list_adaptability" id="">
+                            <select class="list_adaptability" name="list_adaptability" id="#">
                                 <option selected disabled>Выберите пункт...</option>
-                                <option value="opt1">Не адаптивный</option>
-                                <option value="opt1">Адаптивный</option>
+                                <option value="Не адаптивный">Не адаптивный</option>
+                                <option value="Адаптивный">Адаптивный</option>
                             </select>
                         </div>
                         <div class="price_line">
@@ -428,18 +446,40 @@
                         <div class="price_time">
                             <div class="price_time_title">Сроки</div>
                             <div class="price_time_calculator">
-                                <input class="number_time" type="number" value="0">
+                                <input class="number_time" type="number" name="time" value="0">
                             </div>
                         </div>
                         <div class="price_cost">
                             <div class="price_cost_title">Стоимость</div>
                             <div class="price_cost_calculator">
-                                <input class="number_cost" type="number" value="0">
+                                <input class="number_cost" type="number" name="cost" value="0">
                             </div>
                         </div>
                         <div class="price_menu_input">
-                            <input type="submit" value="Оставить заявку">
+                            <input type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1" value="Оставить заявку">
                         </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel1">Данные для связи</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="modal_email">
+                                        <label for="exampleInputPassword1" class="form-label">Телефон</label>
+                                        <input required id="phone_2" type="tel" class="form-control" id="exampleInputPassword1" name="modal_phone">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="submit" class="btn btn-primary">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </form>
                 </section>
             </div>
@@ -462,10 +502,10 @@
             <div class="row">
                 <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
                     <div class="statistics_menu_1">
-                        <div class="statistics_menu_logo element_animation">
+                        <div class="statistics_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/smile.png" alt="">
                         </div>
-                        <div class="statistics_menu_title element-animation" id="statistic_menu_number_1">
+                        <div class="statistics_menu_title element-animation stat_1" id="statistic_menu_number_1">
                             120
                         </div>
                         <div class="statistics_menu_text">
@@ -475,10 +515,10 @@
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
                     <div class="statistics_menu_2">
-                        <div class="statistics_menu_logo element_animation">
+                        <div class="statistics_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/brackets.png" alt="">
                         </div>
-                        <div class="statistics_menu_title element-animation" id="statistic_menu_number_2">
+                        <div class="statistics_menu_title element-animation stat_2" id="statistic_menu_number_2">
                             4,600
                         </div>
                         <div class="statistics_menu_text">
@@ -488,10 +528,10 @@
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
                     <div class="statistics_menu_3">
-                        <div class="statistics_menu_logo element_animation">
+                        <div class="statistics_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/checkmark.png" alt="">
                         </div>
-                        <div class="statistics_menu_title element-animation" id="statistic_menu_number_3">
+                        <div class="statistics_menu_title element-animation stat_3" id="statistic_menu_number_3">
                             340
                         </div>
                         <div class="statistics_menu_text">
@@ -501,10 +541,10 @@
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
                     <div class="statistics_menu_4">
-                        <div class="statistics_menu_logo element_animation">
+                        <div class="statistics_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/cup.png" alt="">
                         </div>
-                        <div class="statistics_menu_title element-animation" id="statistic_menu_number_4">
+                        <div class="statistics_menu_title element-animation stat_4" id="statistic_menu_number_4">
                             23
                         </div>
                         <div class="statistics_menu_text">
@@ -517,10 +557,10 @@
                 <div class="col">
                     <div class="d-lg-none d-block">
                         <div class="statistics_menu_1">
-                            <div class="statistics_menu_logo element_animation">
+                            <div class="statistics_menu_logo wow animate__animated animate__fadeIn">
                                 <img src="img/smile.png" alt="">
                             </div>
-                            <div class="statistics_menu_title">
+                            <div class="statistics_menu_title element-animation stat_1">
                                 120
                             </div>
                             <div class="statistics_menu_text">
@@ -532,10 +572,10 @@
                 <div class="col">
                     <div class="d-lg-none d-block">
                         <div class="statistics_menu_2">
-                            <div class="statistics_menu_logo element_animation">
+                            <div class="statistics_menu_logo wow animate__animated animate__fadeIn">
                                 <img src="img/brackets.png" alt="">
                             </div>
-                            <div class="statistics_menu_title">
+                            <div class="statistics_menu_title element-animation stat_2">
                                 4,600
                             </div>
                             <div class="statistics_menu_text">
@@ -548,11 +588,11 @@
             <div class="row">
                 <div class="col">
                     <div class="d-lg-none d-block">
-                        <div class="statistics_menu_3 element_animation">
+                        <div class="statistics_menu_3 wow animate__animated animate__fadeIn">
                             <div class="statistics_menu_logo">
                                 <img src="img/checkmark.png" alt="">
                             </div>
-                            <div class="statistics_menu_title">
+                            <div class="statistics_menu_title element-animation stat_3">
                                 340
                             </div>
                             <div class="statistics_menu_text">
@@ -563,11 +603,11 @@
                 </div>
                 <div class="col">
                     <div class="d-lg-none d-block">
-                        <div class="statistics_menu_4 element_animation">
+                        <div class="statistics_menu_4 wow animate__animated animate__fadeIn">
                             <div class="statistics_menu_logo">
                                 <img src="img/cup.png" alt="">
                             </div>
-                            <div class="statistics_menu_title">
+                            <div class="statistics_menu_title element-animation stat_4">
                                 23
                             </div>
                             <div class="statistics_menu_text">
@@ -634,13 +674,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <div class="reviews_input">
-                        <input type="radio" name="text_input" value="1">
-                        <input type="radio" name="text_input" value="2">
-                        <input type="radio" name="text_input" value="3">
-                    </div>
--->
+
                 </div>
             </div>
         </div>
@@ -665,7 +699,7 @@
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4  d-none d-sm-block">
                     <div class="contacts_menu_1">
                         <div class="contacts_menu_1_1">
-                            <div class="contacts_menu_logo element_animation">
+                            <div class="contacts_menu_logo wow animate__animated animate__fadeIn">
                                 <img src="img/geo.png" alt="">
                             </div>
                             <div class="contacts_menu_text">
@@ -677,7 +711,7 @@
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4  d-none d-sm-block">
                     <div class="contacts_menu_2">
-                        <div class="contacts_menu_logo element_animation">
+                        <div class="contacts_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/envelope.png" alt="">
                         </div>
                         <div class="contacts_menu_text">
@@ -688,18 +722,18 @@
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4  d-none d-sm-block">
                     <div class="contacts_menu_3">
                         <div class="contacts_menu_3_3">
-                            <div class="contacts_menu_logo element_animation">
+                            <div class="contacts_menu_logo wow animate__animated animate__fadeIn">
                                 <img src="img/tube.png" alt="">
                             </div>
                             <div class="contacts_menu_text">
-                                +7 999 999-99-99
+                                <a href="tel:+7(814)-233-22-11">+7(814)-233-22-11</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 d-sm-none d-block">
                     <div class="contacts_menu_1">
-                        <div class="contacts_menu_logo element_animation">
+                        <div class="contacts_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/geo.png" alt="">
                         </div>
                         <div class="contacts_menu_text">
@@ -710,7 +744,7 @@
                 </div>
                 <div class="col-12 d-sm-none d-block">
                     <div class="contacts_menu_2">
-                        <div class="contacts_menu_logo element_animation">
+                        <div class="contacts_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/envelope.png" alt="">
                         </div>
                         <div class="contacts_menu_text">
@@ -720,67 +754,66 @@
                 </div>
                 <div class="col-12 d-sm-none d-block">
                     <div class="contacts_menu_3">
-                        <div class="contacts_menu_logo element_animation">
+                        <div class="contacts_menu_logo wow animate__animated animate__fadeIn">
                             <img src="img/tube.png" alt="">
                         </div>
                         <div class="contacts_menu_text">
-                            +7 999 999-99-99
+                            <a href="tel:+7(814)-233-22-11">+7(814)-233-22-11</a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-12">
                     <div class="message_title">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
                 </div>
-                <div class="col-8 offset-xxl-2 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2  d-none d-sm-block">
-                    <div class="massage_forms_1">
-                        <form action="#">
-                            <input class="authorization_1" type="text" placeholder="Имя">
-                            <input class="authorization_2" type="text" placeholder="Email">
-                        </form>
-                    </div>
+                <form class="form_2" action="php/mail.php" method="post">
+                    <div class="col-8 offset-xxl-2 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2  d-none d-sm-block">
+                        <div class="massage_forms_1">
 
-                </div>
-                <div class="col-12 d-sm-none d-block">
-                    <div class="massage_forms_1">
-                        <form action="#">
-                            <input class="authorization_1" type="text" placeholder="Имя">
-                            <input class="authorization_2" type="text" placeholder="Email">
-                        </form>
+                            <input pattern="^[A-ZА-ЯЁ]{1}[a-zа-яё]+$" required class="authorization_1" type="text" placeholder="Имя" name="name" title="Первая буква заглавная!">
+                            <input required class="authorization_2" type="email" name="email" placeholder="Email">
+
+                        </div>
+
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="massage_forms_2">
-                        <form action="#">
+                    <div class="col-12 d-sm-none d-block">
+                        <div class="massage_forms_1">
+                            <input class="authorization_1" type="text" placeholder="Имя">
+                            <input class="authorization_2" type="email" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="massage_forms_2">
+
                             <textarea class="textarea_form_2" name="message_forms_textarea" id="1" placeholder="Сообщение" cols="30" rows="10"></textarea>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="massage_forms_3">
-                        <form action="#">
-                            <input class="submit" type="submit" value="Отправить">
-                        </form>
-                    </div>
-                </div>
 
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="massage_forms_3">
+                            <input class="submit" type="submit" value="Отправить">
+                        </div>
+                    </div>
+                </form>
                 <div class="col logo_footer_menu">
                     <div class="contacts_footer_logo d-flex">
-                        <div class="contacts_footer_logo_1 element_animation">
+                        <div class="contacts_footer_logo_1 wow animate__animated animate__fadeIn">
                             <img src="img/fb.png" alt="">
                         </div>
-                        <div class="contacts_footer_logo_2 element_animation">
+                        <div class="contacts_footer_logo_2 wow animate__animated animate__fadeIn">
                             <img src="img/twitter.png" alt="">
                         </div>
-                        <div class="contacts_footer_logo_3 element_animation">
+                        <div class="contacts_footer_logo_3 wow animate__animated animate__fadeIn">
                             <img src="img/ball.png" alt="">
                         </div>
-                        <div class="contacts_footer_logo_4 element_animation">
+                        <div class="contacts_footer_logo_4 wow animate__animated animate__fadeIn">
                             <img src="img/kitty.png" alt="">
                         </div>
-                        <div class="contacts_footer_logo_5 element_animation">
+                        <div class="contacts_footer_logo_5 wow animate__animated animate__fadeIn">
                             <img src="img/inst.png" alt="">
                         </div>
-                        <div class="contacts_footer_logo_6 element_animation">
+                        <div class="contacts_footer_logo_6 wow animate__animated animate__fadeIn">
                             <img src="img/in.png" alt="">
                         </div>
                     </div>
@@ -813,8 +846,10 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/myScript.js"></script>
 </body>
 

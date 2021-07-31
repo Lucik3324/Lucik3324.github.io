@@ -1,6 +1,39 @@
 "use strict"
 $(document).ready(function () {
 
+    new WOW().init();
+
+    $("#phone_2").mask("+7(999) 999-9999");
+
+    $('.form_1').submit(function (event) {
+        event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "php/mail_1.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! \n" + "Мы с вами свяжемся!");
+            $('.form_1').trigger("reset");
+        });
+        return false;
+    });
+
+    $('.form_2').submit(function (event) {
+        event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! \n" + "Мы с вами свяжемся!");
+            $('.form_2').trigger("reset");
+        });
+        return false;
+    });
+
+
     let choiceType = 0;
     let choiceDesign = 0;
     let choiceAdaptability = 0;
@@ -13,7 +46,6 @@ $(document).ready(function () {
 
     let resultTime;
     let resultCost;
-
 
     resultTime = document.querySelector('.number_time');
     resultCost = document.querySelector('.number_cost');
@@ -56,10 +88,11 @@ $(document).ready(function () {
 
         entry.forEach(change => {
             if (change.isIntersecting) {
-                outNum(120, "#statistic_menu_number_1", 2000, 1);
-                outNum(4600, "#statistic_menu_number_2", 10, 10);
-                outNum(340, "#statistic_menu_number_3", 2000, 1);
-                outNum(23, "#statistic_menu_number_4", 2000, 1);
+                
+                outNum(120, ".stat_1", 2000, 1);
+                outNum(4600, ".stat_2", 10, 10);
+                outNum(340, ".stat_3", 2000, 1);
+                outNum(23, ".stat_4", 2000, 1);
 
                 change.target.classList.add('show-animation');
             }
