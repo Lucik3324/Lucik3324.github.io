@@ -1,9 +1,49 @@
 "use strict"
 $(document).ready(function () {
 
+    $(".logo").find('a').addClass("active");
+
+    $(window).scroll(() => {
+        let scrollDistance = $(window).scrollTop();
+        $(".section").each((i, el) => {
+            if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance) {
+
+                $("nav a").each((i, el) => {
+                    if ($(el).hasClass("active")) {
+                        $(el).removeClass("active");
+                    }
+                });
+                $('nav .menu li:eq(' + i + ')').find('a').addClass('active');
+            }
+
+
+        });
+
+        $(".main").each((i, el) => {
+
+
+
+            if ($(el).offset().top == $(".main").outerHeight() - $("nav").outerHeight() <= scrollDistance) {
+                $("nav a").each((i, el) => {
+                    if ($(el).hasClass("active")) {
+                        $(el).removeClass("active");
+                    }
+                });
+
+                $(".logo").find('a').addClass("active");
+
+                $("nav li a").each((i, el) => {
+                    if ($(el).hasClass("active")) {
+                        $(el).removeClass("active");
+                    }
+                });
+            }
+        });
+    });
+
     new WOW().init();
 
-    $("#phone_2").mask("+7(999) 999-9999");
+    $("#phone_2").mask("+375(99) 999-99-99");
 
     $('.form_1').submit(function (event) {
         event.preventDefault();
@@ -88,11 +128,8 @@ $(document).ready(function () {
 
         entry.forEach(change => {
             if (change.isIntersecting) {
-                
-                outNum(120, ".stat_1", 2000, 1);
-                outNum(4600, ".stat_2", 10, 10);
-                outNum(340, ".stat_3", 2000, 1);
-                outNum(23, ".stat_4", 2000, 1);
+
+                outNum();
 
                 change.target.classList.add('show-animation');
             }
@@ -101,18 +138,20 @@ $(document).ready(function () {
 
     }
 
-    function outNum(num, elem, time, step) {
+    function outNum() {
         if (!$(".statistics_menu_title").hasClass('show-animation')) {
-            let e = document.querySelector(elem);
-            let n = 0;
-            let t = Math.round(time / (num / step));
-            let interval = setInterval(() => {
-                n = n + step;
-                if (n == num) {
-                    clearInterval(interval);
-                }
-                e.innerHTML = n;
-            }, t);
+            var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
+            $(".statistics_menu_title").each(function () {
+                var tcount = $(this).data("count");
+                $(this).animateNumber({
+                        number: tcount,
+                        easing: 'easeInQuad',
+                        "font-size": "40px",
+                        numberStep: comma_separator_number_step
+                    },
+                    2000);
+            });
+
         }
     }
 
@@ -138,7 +177,7 @@ $(document).ready(function () {
     $('.rev_slider').slick({
         arrows: false,
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 300,
         slidesToShow: 1,
         adaptiveHeight: false

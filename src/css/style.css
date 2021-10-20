@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif
 }
 
 a {
@@ -124,25 +124,24 @@ nav {
     font-size: 25px;
     line-height: 60px;
     float: left;
-/*
-    -webkit-animation: comming ease 2s;
-    -o-animation: comming ease 2s;
-    animation: comming ease 2s;
-*/
-        --animate-duration: 2s;
+    --animate-duration: 2s;
 }
 
-/*
-@keyframes comming {
-    from {
-        opacity: 0;
-    }
+.logo a {
+    color: #fff;
+    z-index: 10;
+    display: inline-block;
 
-    to {
-        opacity: 1;
-    }
 }
-*/
+
+.logo a:hover {
+    color: #e88604;
+}
+
+.logo a:active {
+    color: #e88604;
+    transform: scale(1.1);
+}
 
 .menu {
     float: left;
@@ -157,27 +156,7 @@ nav {
     font-size: 14px;
     text-transform: uppercase;
     --animate-duration: 0.4s;
-/*
-    opacity: 0;
-    -webkit-animation: topshift 0.4s ease forwards;
-    -o-animation: topshift 0.4s ease forwards;
-    animation: topshift 0.4s ease forwards;
-*/
 }
-
-/*
-@keyframes topshift {
-    from {
-        opacity: 0;
-        margin-top: -80px;
-    }
-
-    to {
-        opacity: 1;
-        margin-top: 0px;
-    }
-}
-*/
 
 .menu li:nth-child(2) {
     animation-delay: 0.4s;
@@ -199,26 +178,14 @@ nav {
     animation-delay: 2.0s;
 }
 
-/*
-.element-animation{
-    opacity: 0;
-}
-
-.element-animation.show-animation{
-    opacity: 1;
-    transition: opacity 1s;
-}
-*/
-
 .menu li a {
     color: #fff;
     transition: scale 0.1s;
     display: inline-block;
 }
 
-
-.menu li a:visited {
-    color: #fff;
+.active:visited {
+    color: #e88604;
 }
 
 .menu li a:hover {
@@ -245,30 +212,8 @@ nav {
     color: #2c384a;
     text-align: center;
     width: 100%;
-/*
-    opacity: 0;
-    -webkit-animation: titlemove 1s ease forwards;
-    -o-animation: titlemove 1s ease forwards;
-    animation: titlemove 1s ease forwards;
-    -webkit-animation-delay: 2.4s;
-    -o-animation-delay: 2.4s;
-*/
     animation-delay: 2s;
 }
-
-/*
-@keyframes titlemove {
-    from {
-        opacity: 0;
-        margin-left: -500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 0px;
-    }
-}
-*/
 
 .title_container h1 {
     font-size: 72px;
@@ -302,17 +247,15 @@ nav {
     margin-top: 40px;
 }
 
-.modal-title{
-    margin: 0 auto;
-}
-.modal-body{
+.modal-title {
     margin: 0 auto;
 }
 
+.modal-body {
+    margin: 0 auto;
+}
 
-
-
-.modal-footer{
+.modal-footer {
     margin: 0 auto;
 }
 
@@ -333,16 +276,12 @@ nav {
 
 .about {
     width: 100%;
-    height: 720px;
+    padding-top: 100px;
     background: url(../img/about_bg.jpg) no-repeat;
 }
 
-.about_title {
-    padding-top: 100px;
-
-}
-
 .about_title h3 {
+
     text-align: center;
     font-size: 30px;
     color: #263244;
@@ -354,13 +293,8 @@ nav {
     height: 5px;
     opacity: 1;
     background: #eb7800;
-    margin: 35px auto 0px auto;
+    margin: 40px auto 40px auto;
 }
-
-.about_img {
-    padding-top: 50px;
-}
-
 
 .about_title_img {
     display: block;
@@ -368,12 +302,12 @@ nav {
     border-radius: 50%;
 }
 
-.animate__animated.animate__fadeIn{
-    --animate-delay: 1s;
+.about_text_1 {
+    text-align: center;
 }
 
-.about_title_img:hover {
-    transform: scale(1.1);
+.animate__animated.animate__fadeIn {
+    --animate-delay: 1s;
 }
 
 .abot_text {
@@ -393,6 +327,7 @@ nav {
 }
 
 .about_input input {
+    text-align: center;
     background: url(../img/about_icon.jpg) no-repeat;
     background-position: 10px 50%;
     display: inline-block;
@@ -417,15 +352,11 @@ nav {
 
 .skills {
     width: 100%;
-    height: 520px;
     background: url(../img/skills_bg.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-}
-
-.skills_title {
-    padding-top: 110px;
+    padding-top: 100px;
 }
 
 .skills_title h3 {
@@ -439,11 +370,11 @@ nav {
 .skill_menu_2,
 .skill_menu_3,
 .skill_menu_4 {
-    padding-top: 110px;
     text-align: center;
     width: 240px;
     height: 200px;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .skill_menu_logo {
@@ -458,7 +389,7 @@ nav {
 
 .skill_menu_title {
     text-align: center;
-    padding-top: 35px;
+    padding-top: 20px;
     color: #cf7600;
     font-weight: bold;
     font-size: 18px;
@@ -466,13 +397,13 @@ nav {
 
 .skill_menu_text {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .keys_main {
     width: 100%;
     background: url(../img/keys_bg.jpg) no-repeat;
-    height: 270px;
+    height: 230px;
 }
 
 .keys_main img {
@@ -481,6 +412,7 @@ nav {
 }
 
 .keys_title {
+
     padding-top: 100px;
     text-align: center;
     font-size: 30px;
@@ -489,8 +421,8 @@ nav {
 }
 
 .keys_title_text {
-    padding-top: 30px;
     text-align: center;
+    display: none;
 }
 
 .keys_slider img {
@@ -562,9 +494,8 @@ nav {
 }
 
 .price {
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
-    height: 870px;
     -webkit-box-shadow: 0px -2px 15px 9px rgba(34, 60, 80, 0.17);
     -moz-box-shadow: 0px -2px 15px 9px rgba(34, 60, 80, 0.17);
     box-shadow: 0px -2px 15px 9px rgba(34, 60, 80, 0.17);
@@ -645,6 +576,7 @@ nav {
     font-size: 20px;
     font-weight: 600;
     color: #1c2534;
+    background: none;
 }
 
 .price_cost_calculator input {
@@ -653,29 +585,15 @@ nav {
     font-size: 20px;
     font-weight: 600;
     color: #1c2534;
+    background: none;
 }
 
 
 .price_menu_input {
     padding-top: 10px;
-    padding-bottom: 25px;
     width: 200px;
-    height: 70px;
     margin: 0 auto;
 }
-
-/*
-.price_menu_input.input{
-        font-size: 20px;
-    width: 200px;
-    height: 45px;
-    text-align: center;
-    background-color: #63b5ae;
-    text-align: center;
-    border-radius: 5px;
-    color: #fff;
-}
-*/
 
 .price_menu_input input {
     font-size: 20px;
@@ -686,6 +604,8 @@ nav {
     text-align: center;
     border-radius: 5px;
     color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .price_menu_input input:active {
@@ -709,9 +629,8 @@ input[type="number"]:focus {
 
 
 .statistics {
-    margin-top: 150px;
+    margin-top: 100px;
     width: 100%;
-    height: 500px;
     background: url(../img/statistics_bg.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -738,11 +657,11 @@ input[type="number"]:focus {
 .statistics_menu_2,
 .statistics_menu_3,
 .statistics_menu_4 {
-    padding-top: 40px;
     text-align: center;
     width: 230px;
     height: 200px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .statistics_menu_logo img {
@@ -769,14 +688,9 @@ input[type="number"]:focus {
 }
 
 .reviews {
+    padding-top: 100px;
     width: 100%;
-    height: 650px;
     background: url(../img/reviews_bg.jpg) no-repeat;
-}
-
-.reviews_title {
-    padding-top: 110px;
-
 }
 
 .reviews_title h3 {
@@ -784,10 +698,6 @@ input[type="number"]:focus {
     font-size: 30px;
     color: #263244;
     font-weight: 600;
-}
-
-.reviews_img {
-    padding-top: 60px;
 }
 
 .reviews_img img {
@@ -819,8 +729,8 @@ input[type="number"]:focus {
 }
 
 .contacts {
+    margin-top: 100px;
     width: 100%;
-    height: 800px;
     background: url(../img/contacts_bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -835,7 +745,6 @@ input[type="number"]:focus {
 }
 
 .contacts_text {
-    padding-top: 30px;
     color: #fff;
     font-size: 15px;
     text-align: center;
@@ -882,7 +791,7 @@ input[type="number"]:focus {
     font-size: 15px;
 }
 
-.contacts_menu_text a{
+.contacts_menu_text a {
     color: #fff;
 }
 
@@ -905,7 +814,7 @@ input[type="number"]:focus {
 
 .authorization_1 {
     margin-right: 15px;
-    width: 350px;
+    width: 352px;
     height: 35px;
     background: #d3d6dc;
     font-size: 15px;
@@ -915,9 +824,8 @@ input[type="number"]:focus {
 
 
 .authorization_2 {
-    /*    margin-left: auto;*/
-    margin-left: 15px;
-    width: 350px;
+    margin-left: 16px;
+    width: 352px;
     height: 35px;
     background: #d3d6dc;
     font-size: 15px;
@@ -933,7 +841,7 @@ input[type="number"]:focus {
 .textarea_form_2 {
     text-align: left;
     display: block;
-    width: 735px;
+    width: 736px;
     height: 95px;
     margin-top: 10px;
     resize: none;
@@ -952,6 +860,7 @@ input[type="number"]:focus {
 
 .submit {
     margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
     width: 125px;
     height: 45px;
@@ -969,6 +878,7 @@ input[type="number"]:focus {
 .contacts_footer_logo {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .contacts_footer_logo {
@@ -1005,19 +915,11 @@ input[type="number"]:focus {
 }
 
 @media(max-width:1200px) {
-    .skills {
-        height: 350px;
-    }
-
-    .skills_title {
-        padding-top: 30px;
-    }
 
     .skill_menu_1,
     .skill_menu_2,
     .skill_menu_3,
     .skill_menu_4 {
-        padding-top: 20px;
         margin: 0 auto;
     }
 
@@ -1096,20 +998,6 @@ input[type="number"]:focus {
         background: rgba(0, 0, 0, 0.3);
     }
 
-    .keys_slider img {}
-
-    .skills {
-        height: 450px;
-    }
-
-    .skill_menu_1,
-    .skill_menu_2,
-    .skill_menu_3,
-    .skill_menu_4 {
-        height: 170px;
-    }
-
-
     .keys_info_project_text {
         padding-top: 5px;
         font-size: 13px;
@@ -1167,7 +1055,7 @@ input[type="number"]:focus {
 
     .authorization_1,
     .authorization_2 {
-        width: 150px;
+        width: 151px;
     }
 
     .textarea_form_2 {
@@ -1176,17 +1064,6 @@ input[type="number"]:focus {
 }
 
 @media(max-width: 575px) {
-
-    .contacts_menu_1,
-    .contacts_menu_2,
-    .contacts_menu_3 {
-        margin-top: 30px;
-    }
-
-    .contacts {
-        height: 1080px;
-    }
-
     .massage_forms_1 {
         display: flex;
         width: 100%;
@@ -1196,7 +1073,8 @@ input[type="number"]:focus {
     .contacts_footer_logo {
         padding-top: 30px;
     }
-    .logo_footer_menu{
+
+    .logo_footer_menu {
         display: none;
     }
 }
@@ -1233,34 +1111,12 @@ input[type="number"]:focus {
         margin: 0;
         margin-top: 20px;
     }
-
-    .contacts {
-        height: 1120px;
-    }
-
 }
 
 @media(max-width: 520px) {
-    .skills {
-        height: 800px;
-    }
-
     .textarea_form_2 {
         width: 100%;
         margin-top: 20px;
-    }
-}
-
-@media(max-width: 501px) {
-    .statistics {
-        height: 920px;
-    }
-
-    .statistics_menu_1,
-    .statistics_menu_2,
-    .statistics_menu_3,
-    .statistics_menu_4 {
-        padding-top: 20px;
     }
 }
 
@@ -1282,16 +1138,9 @@ input[type="number"]:focus {
 }
 
 @media(max-width: 434px) {
-    .about {
-        height: 800px;
-    }
 
     .keys_info_project {
         height: 150px;
-    }
-
-    .price {
-        height: 950px;
     }
 }
 
@@ -1305,22 +1154,17 @@ input[type="number"]:focus {
     }
 }
 
-@media(max-width: 360px),
-(max-height: 640px) {
+@media(max-width: 360px) {
+    .logo {
+        font-size: 20px;
+    }
+
     .title_container input {
         margin-top: 20px;
     }
 
-    .about_title {
-        padding-top: 50px;
-    }
-
-    .about_img {
-        padding-top: 25px;
-    }
-
     .linel hr {
-        margin: 25px auto 0px auto;
+        margin: 40px auto 40px auto;
         background: #eb7800;
         z-index: 3;
     }
@@ -1337,10 +1181,6 @@ input[type="number"]:focus {
         height: 160px;
     }
 
-    .contacts {
-        height: 1140px;
-    }
-
     .authorization_1,
     .authorization_2 {
         width: 100%;
@@ -1351,8 +1191,7 @@ input[type="number"]:focus {
     }
 }
 
-@media(max-width: 320px),
-(max-height: 568px) {
+@media(max-width: 320px) {
     .logo {
         font-size: 20px;
     }
@@ -1365,28 +1204,21 @@ input[type="number"]:focus {
         height: 180px;
     }
 
-    .price {
-        height: 800px;
-    }
-
     .price_menu_title {
         padding-top: 25px;
         font-size: 20px;
     }
 
-    .contacts {
-        height: 1160px;
-    }
+}
 
+@media(max-width: 290px) {
+    .logo {
+        font-size: 16px;
+    }
 }
 
 @media(max-width: 280px) {
-    .about {
-        height: 810px;
-    }
-
     .logo {
-        font-size: 20px;
         line-height: 30px;
     }
 
